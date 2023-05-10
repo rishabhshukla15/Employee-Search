@@ -11,6 +11,12 @@ To run the application, follow these steps:
 3. Start the server by running `ng serve` or `npm start` in the project directory.
 4. Open your web browser and navigate to `http://localhost:4200`.
 
+Version:
+npm -v
+9.5.1
+node -v
+v18.16.0
+
 ## Usage
 
 Once the application is running, you will see a list of employee records displayed on the screen. You can search for an employee by typing either First Name, Last name or Email into the search box located at the top of the screen. The search is case-insensitive and will match any part of the attribute.
