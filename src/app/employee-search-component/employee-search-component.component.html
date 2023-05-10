@@ -1,0 +1,58 @@
+<div>
+    <h2>Search Employees</h2>
+    <label>
+        Search by name or email:
+        <input class="form-control" [(ngModel)]="searchTerm" (input)="search()">
+    </label>
+    <!-- <ul>
+        <li *ngFor="let employee of matchingEmployees">{{employee.firstName}} {{employee.lastName}}</li>
+      </ul> -->
+    <table *ngIf="searchTerm.length == 0" class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Title</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of tdata">
+                <td>{{ employee.firstName }}</td>
+                <td>{{ employee.lastName }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.title }}</td>
+                <td>{{ employee.phoneNumber }}</td>
+                <td>{{ employee.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table *ngIf="matchingEmployees.length > 0 && searchTerm.length != 0" class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Title</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of matchingEmployees">
+                <td>{{ employee.firstName }}</td>
+                <td>{{ employee.lastName }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.title }}</td>
+                <td>{{ employee.phoneNumber }}</td>
+                <td>{{ employee.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p *ngIf="matchingEmployees.length === 0 && searchTerm.length != 0">No matching employees found.</p>
+
+
+</div>
