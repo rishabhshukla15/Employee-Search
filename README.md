@@ -1,27 +1,94 @@
-# EmployeeRecordsApp
+# Employee Record Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+This is a basic Angular application that displays a list of employee records and allows the user to search for employees by any of their attributes. The data is stored in an Angular service as a backend.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To run the application, follow these steps:
 
-## Code scaffolding
+1. Clone the repository to your local machine.
+2. Install the dependencies by running `npm install` in the project directory.
+3. Start the server by running `ng serve` or `npm start` in the project directory.
+4. Open your web browser and navigate to `http://localhost:4200`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+Once the application is running, you will see a list of employee records displayed on the screen. You can search for an employee by typing either First Name, Last name or Email into the search box located at the top of the screen. The search is case-insensitive and will match any part of the attribute.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If there are multiple employees that match the search criteria, they will all be displayed in the list. If there are no matches, a message will be displayed indicating that no employees were found.
 
-## Running unit tests
+## Employee Record Format
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Each employee record has the following attributes:
 
-## Running end-to-end tests
+- First Name
+- Last Name
+- Email
+- Title
+- Phone Number
+- Address
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+All of these attributes are required and must be included in each employee record.
 
-## Further help
+## Seed Data
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The following employee records are included in the seed data:
+
+[
+    {
+        "firstName": "Rahul",
+        "lastName": "Sharma",
+        "email": "rahul.sharma@example.com",
+        "title": "Software Engineer",
+        "phoneNumber": "+91 9876543210",
+        "address": "123 St, Anytown, India"
+    },
+    {
+        "firstName": "Priya",
+        "lastName": "Kumar",
+        "email": "priya.kumar@example.com",
+        "title": "Web Developer",
+        "phoneNumber": "+91 9876543220",
+        "address": "456 St, Anytown, India"
+    },
+    {
+        "firstName": "Amit",
+        "lastName": "Patel",
+        "email": "amit.patel@example.com",
+        "title": "Product Manager",
+        "phoneNumber": "+91 9876543230",
+        "address": "789 St, Anytown, India"
+    },
+    {
+        "firstName": "Sneha",
+        "lastName": "Singh",
+        "email": "sneha.singh@example.com",
+        "title": "UX Designer",
+        "phoneNumber": "+91 9876543240",
+        "address": "246 St, Anytown, India"
+    },
+    {
+        "firstName": "Raj",
+        "lastName": "Gupta",
+        "email": "raj.gupta@example.com",
+        "title": "Marketing Manager",
+        "phoneNumber": "+91 9876543250",
+        "address": "369 St, Anytown, India"
+    },
+    {
+        "firstName": "Anjali",
+        "lastName": "Nair",
+        "email": "anjali.nair@example.com",
+        "title": "Software Engineer",
+        "phoneNumber": "+91 9876543260",
+        "address": "135 St, Anytown, India"
+    },
+    {
+        "firstName": "Priya",
+        "lastName": "Singh",
+        "email": "priya.singh@example.com",
+        "title": "UI/UX Developer",
+        "phoneNumber": "+91 9876543270",
+        "address": "899 St, Anytown, India"
+    }
+]

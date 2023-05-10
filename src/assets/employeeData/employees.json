@@ -5,7 +5,7 @@
         "email": "rahul.sharma@example.com",
         "title": "Software Engineer",
         "phoneNumber": "+91 9876543210",
-        "address": "123 Main St, Anytown, India"
+        "address": "123 St, Anytown, India"
     },
     {
         "firstName": "Priya",
@@ -13,7 +13,7 @@
         "email": "priya.kumar@example.com",
         "title": "Web Developer",
         "phoneNumber": "+91 9876543220",
-        "address": "456 Elm St, Anytown, India"
+        "address": "456 St, Anytown, India"
     },
     {
         "firstName": "Amit",
@@ -21,7 +21,7 @@
         "email": "amit.patel@example.com",
         "title": "Product Manager",
         "phoneNumber": "+91 9876543230",
-        "address": "789 Oak St, Anytown, India"
+        "address": "789 St, Anytown, India"
     },
     {
         "firstName": "Sneha",
@@ -29,7 +29,7 @@
         "email": "sneha.singh@example.com",
         "title": "UX Designer",
         "phoneNumber": "+91 9876543240",
-        "address": "246 Birch St, Anytown, India"
+        "address": "246 St, Anytown, India"
     },
     {
         "firstName": "Raj",
@@ -37,7 +37,7 @@
         "email": "raj.gupta@example.com",
         "title": "Marketing Manager",
         "phoneNumber": "+91 9876543250",
-        "address": "369 Pine St, Anytown, India"
+        "address": "369 St, Anytown, India"
     },
     {
         "firstName": "Anjali",
@@ -45,7 +45,16 @@
         "email": "anjali.nair@example.com",
         "title": "Software Engineer",
         "phoneNumber": "+91 9876543260",
-        "address": "135 Maple St, Anytown, India"
+        "address": "135 St, Anytown, India"
+    },
+    {
+        "firstName": "Priya",
+        "lastName": "Singh",
+        "email": "priya.singh@example.com",
+        "title": "UI/UX Developer",
+        "phoneNumber": "+91 9876543270",
+        "address": "899 St, Anytown, India"
     }
+
 
 ]
